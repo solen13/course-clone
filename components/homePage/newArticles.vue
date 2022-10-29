@@ -6,18 +6,7 @@
 
     <div class="card-banner">
 
-      <div class="card-head">
-
-        <span>
-           <h1>News & Articles</h1>
-           <h2>Here some descriptions...</h2>
-        </span>
-
-        <ib-button text-color="#2D2B74" v-if="all===4" text="view All" :round="true" bg-color="#EBEEF3" @clicked="all=8" />
-        <ib-button text-color="#2D2B74" v-else text="Close" :round="true" bg-color="#EBEEF3" @clicked="all=4" />
-
-      </div>
-
+   <content-head title="New & Articles"  sub-title="Here some descriptions..." :click="btnClick" :buttonview=btnText />
 
       <div class="card-contener">
         <div class="card-content" v-for="item in all" :key="item">
@@ -45,17 +34,31 @@
 
 <script>
 import IbButton from "../button/ib-button";
+import ContentHead from "../contentHead/content-head";
 export default {
   name: "outCourse",
-  components: {IbButton},
+  components: {ContentHead, IbButton},
   data(){
     return{
-      all:4
+      all:4,
+      btnText:'View',
+      isExpand:true,
     }
   },
   methods:{
     alls(){
       alert()
+    },
+    btnClick(){
+      this.isExpand = !this.isExpand
+      if(this.isExpand===true){
+        this.btnText='view'
+        this.all=4
+      }
+      else {
+        this.btnText='close'
+        this.all=8
+      }
     }
   }
 }

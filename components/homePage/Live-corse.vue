@@ -3,7 +3,7 @@
   <div class="live-corese-Content">
     <div class="card-banner">
 
-     <content-head title="Live Course"  sub-title="Here some descriptions..."  />
+     <content-head title="Live Course"  sub-title="Here some descriptions..." :click="bas" :buttonview=btnText />
 
       <div class="card-contener">
         <div class="card-content" v-for="item in all" :key="item">
@@ -42,11 +42,23 @@ export default {
   components: {ContentHead},
   data(){
     return {
-      all:3
+      all:3,
+      btnText:'View',
+      isExpand:true,
     }
   },
   methods:{
-
+    bas(){
+      this.isExpand = !this.isExpand
+      if(this.isExpand===true){
+        this.btnText='view'
+        this.all=3
+      }
+      else {
+        this.btnText='close'
+        this.all=6
+      }
+    }
   }
 
 }

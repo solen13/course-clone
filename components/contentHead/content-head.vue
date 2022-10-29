@@ -3,9 +3,9 @@
 
         <span>
            <h1>{{title}}</h1>
-           <h2>{{ subTitle }}.</h2>
+           <h2>{{ subTitle }}</h2>
         </span>
-    <ib-button text-color="#2D2B74" :text=buttonview :round="true" bg-color="#EBEEF3"  />
+    <ib-button  :text-color=textColor :text=buttonview  :round="true"   :bg-color=btnBg @clicked=click  />
 
   </div>
 
@@ -30,6 +30,19 @@ export default {
 
       required:false,
       default:'View All'
+    },
+    click:{
+      type:String,
+      required:false,
+    },
+    textColor:{
+      type:String,
+      required:false,
+    },
+    btnBg:{
+      type:String,
+      required:false,
+      default:'#EBEEF3'
     },
    buttonClose: {
 

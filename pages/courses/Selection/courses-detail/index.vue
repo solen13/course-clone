@@ -1,24 +1,21 @@
 <template>
-<div class="corses">
-
-  <all-courses/>
+<div class="detail">
+  <courses-detail/>
 </div>
 </template>
 
 <script>
-import AllCourses from "../../components/courses/allCourses";
+import CoursesDetail from "../../../../components/courses/detail/coursesDetail";
 export default {
   name: "index",
-  components: {AllCourses}
+  components: {CoursesDetail}
 }
 </script>
 
 <style scoped>
-.corses{
+.detail{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 </style>

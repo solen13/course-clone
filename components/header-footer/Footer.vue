@@ -14,7 +14,7 @@
 
     <div class="sosical">
       <ul>
-        <li><ib-button icon="sosyalIcon2" direction="left" " /></li>
+        <li><ib-button icon="sosyalIcon2" direction="left"  /></li>
         <li> <ib-button icon="sosyalIcon1" direction="left" /></li>
         <li> <ib-button icon="sosyalIcon3" direction="left" /></li>
         <li> <ib-button icon="sosyalIcınyoutube" direction="left" /></li>

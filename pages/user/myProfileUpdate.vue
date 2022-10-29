@@ -36,7 +36,7 @@
 <script>
 import IbButton from "../../components/button/ib-button";
 export default {
-  name: "profileDyazayn",
+  name: "myProfileUpdate",
   components: {IbButton},
   data(){
     return{
@@ -44,7 +44,7 @@ export default {
     }
   },
 
-  layout:'profile',
+
   methods:{
     hideShow(){
 

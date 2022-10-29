@@ -11,7 +11,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '../static/Foundation' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/Foundation.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

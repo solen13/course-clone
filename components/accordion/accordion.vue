@@ -1,21 +1,14 @@
 <template >
 
-  <div class="accordion-content">
 
-    <div class="card-banner">
 
-      <div class="card-container">
-
-        <div class="card-content"  >
+        <div class="card-content">
          <span class="head" >
-
-           <span>
-              <h3>{{item && item.title }}</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-           </span>
-
-           <ib-button icon="Vector" direction="left" :round="true" bg-color="#EBEEF3"  @clicked="toggleExpand()" />
-
+             <span>
+                <h3>{{item && item.title }}</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+             </span>
+             <ib-button icon="Vector" direction="left" :round="true" bg-color="#EBEEF3"  @clicked="toggleExpand()" />
          </span>
 
           <div :class="isExpand?'show' : 'hide' " class="accordion " >
@@ -27,11 +20,9 @@
           </div>
         </div>
 
-      </div>
 
-    </div>
 
-  </div>
+
 
 </template>
 
@@ -72,45 +63,10 @@ this.isExpand = !this.isExpand
 
 <style lang="scss" scoped>
 
-.accordion-content {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  .card-banner {
-    width: 1180px;
-    height: auto;
-
-    .card-head {
-      display: flex;
-      justify-content: space-between;
-
-      span {
-        margin-bottom: 24px;
-
-        h1 {
-          font-size: 24px;
-          color: #425466;
-          margin-bottom: 8px;
-        }
-
-        h2 {
-          font-size: 16px;
-          color: #6C7C8C;
-        }
-
-      }
-
-    }
 
 
-    .card-container {
-
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
       .card-content {
+
         width: 580px;
         height: auto;
         border: 1px solid #EBEEF3;
@@ -155,12 +111,10 @@ this.isExpand = !this.isExpand
         }
         .hide {
           display: none;
-        }      }
+        }
+      }
 
 
-    }
-  }
-}
 
 </style>
 

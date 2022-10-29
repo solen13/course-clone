@@ -17,9 +17,10 @@
             <h1>Article Title</h1>
             <p class="lang">What is the religion that is practiced by 1.6 billion people around the world?</p>
 
-            <ib-button text-color="#2D2B74"  text="view Al" :round="true" bg-color="#EBEEF3" @clicked="alls" />
+            <ib-button text-color="#B4975A"  text="View Course" :outlined="true" :round="true"  />
 
           </div>
+
         </div>
       </div>
 
@@ -79,7 +80,7 @@ export default {
   align-items: center;
   margin-top: 10px;
   margin-bottom: 15px;
-  height: auto;
+
   .card-banner{
     width: 1180px;
 

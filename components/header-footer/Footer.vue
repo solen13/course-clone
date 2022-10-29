@@ -5,16 +5,16 @@
 
 
     <div class="icons">
-      <ib-button class="ib-button" margin="5px" icon="home"  direction="left"  text="HOME" text-color="#EBEEF3"  />
-      <ib-button  margin="5px"  icon="icon3"  direction="left"  text="COURSES" text-color="#EBEEF3"  />
-      <ib-button   margin="5px"  icon="icon4"  direction="left"  text="QUESTIONS" text-color="#EBEEF3"  />
+      <ib-button @clicked="$router.push('/')" class="ib-button" margin="5px" icon="home"  direction="left"  text="HOME" text-color="#EBEEF3"  />
+      <ib-button @clicked="$router.push('/courses')"  margin="5px"  icon="icon3"  direction="left"  text="COURSES" text-color="#EBEEF3"  />
+      <ib-button  @clicked="$router.push('/questions/privacy-policy')"  margin="5px"  icon="icon4"  direction="left"  text="QUESTIONS" text-color="#EBEEF3"  />
 
 
     </div>
 
     <div class="sosical">
       <ul>
-        <li><ib-button icon="sosyalIcon2" direction="left" /></li>
+        <li><ib-button icon="sosyalIcon2" direction="left" " /></li>
         <li> <ib-button icon="sosyalIcon1" direction="left" /></li>
         <li> <ib-button icon="sosyalIcon3" direction="left" /></li>
         <li> <ib-button icon="sosyalIcınyoutube" direction="left" /></li>

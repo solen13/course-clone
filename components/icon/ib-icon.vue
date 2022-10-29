@@ -3,7 +3,7 @@
 
 
 
-  <img  :src="require(`~/static/icon/${icon}.svg`)"  />
+  <img  :src="require(`../../static/icon/${icon}.svg`)"  />
 
   <svg  style="display:none" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 0C12.717 0 13.056 0.00999994 14.122 0.0599999C15.187 0.11 15.912 0.277 16.55

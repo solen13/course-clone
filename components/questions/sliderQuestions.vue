@@ -4,7 +4,7 @@
       <li v-for="item in lists" :key="item">
         <nuxt-link class="nuxt-links" :to='item.url' active-class="active">
           <span>{{ item.title }}</span>
-          <img src="~/static/icon/right.svg" alt="">
+          <img src="../../static/icon/right.svg" alt="">
         </nuxt-link>
 
       </li>

@@ -8,7 +8,7 @@
       <div class="card-contener">
         <div class="card-content" v-for="item in all" :key="item">
 
-          <img src="@/static/image.png" alt="">
+          <img src="../../static/Image.png" alt="">
 
           <div class="contents">
             <h1>Level1</h1>

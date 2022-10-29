@@ -7,7 +7,7 @@
      <ul>
        <li v-for="item in 3" :key="item.id">
 
-         <img src="@/static/resim.png" alt="">
+         <img src="../../static/resim.png" alt="">
 
          <span>
            <h1> John Doe</h1>

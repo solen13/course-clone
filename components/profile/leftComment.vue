@@ -10,7 +10,7 @@
     <li v-for="item in profile"  :key="item">
       <nuxt-link  class="nuxtlink" :to="item.url" active-class="active">
        <div class="titles"> {{ item.title }}</div>
-        <img src="~/static/icon/right.svg" alt="">
+        <img src="../../static/icon/right.svg" alt="">
      </nuxt-link>
 
     </li>

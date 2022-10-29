@@ -21,7 +21,7 @@
 
       <div class="card-contener">
         <div class="card-content" v-for="item in all" :key="item">
-          <img src="@/static/cardImage.png" alt="">
+          <img src="../../static/cardImage.png" alt="">
 
           <div class="contents">
             <P>Until 31 April 2020</P>

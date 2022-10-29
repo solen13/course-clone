@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
 
-    <div class="logo">  <img src="@/static/Foundation.png">  </div>
+    <div class="logo">  <img src="../../static/Foundation.png">  </div>
 
 
     <div class="icons">
